@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1240" height="442" viewBox="0 0 1240 442" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 33" clip-path="url(#clip0_0_12)">
+<rect id="Rectangle 134" width="1240" height="442" rx="50" fill="#1C1A1A"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M1272.62 266.144L1262.5 239.138L1142.92 283.969L1237 197.609L1217.49 176.362L1120.98 264.96L1175.2 145.696L1148.94 133.76L1096.98 248.069L1103.66 122.679L1074.85 121.145L1067.79 253.822L1021.14 129.413L994.138 139.539L1040.78 263.947L948.231 168.619L927.537 188.71L1015.01 278.802L900.696 226.834L888.76 253.09L1008.02 307.31L877.054 304.001L876.327 332.833L1003.99 336.059L884.413 380.891L894.539 407.897L1014.11 363.065L920.04 449.426L939.543 470.672L1036.06 382.075L981.835 501.338L1008.09 513.274L1060.06 398.965L1053.38 524.356L1082.18 525.889L1089.25 393.213L1135.89 517.621L1162.9 507.496L1116.25 383.086L1208.8 478.415L1229.5 458.325L1142.03 368.232L1256.34 420.199L1268.28 393.945L1149.01 339.725L1279.98 343.033L1280.71 314.202L1153.05 310.976L1272.62 266.144Z" fill="url(#paint0_linear_0_12)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_12" x1="1267.56" y1="252.641" x2="805.223" y2="392.533" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0147FF"/>
+<stop offset="1" stop-color="#0147FF" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_0_12">
+<rect width="1240" height="442" fill="white"/>
+</clipPath>
+</defs>
+</svg>
