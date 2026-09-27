@@ -1,0 +1,8 @@
+node_modules/
+.cargo-ok
+.next/
+yarn.lock
+package-lock.json
+.env
+out/
+*.tsbuildinfo
