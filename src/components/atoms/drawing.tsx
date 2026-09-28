@@ -5,17 +5,1961 @@ import * as msi from "misaki-studio-internal";
 import { SVGs } from "../../design-system/images";
 import styles from "./drawing.module.scss";
 
+export type States = { phase: string };
+
+export const timelineData = (id: string): msi.timeline.Timelines => ({
+  hoverReveal: {
+    data: [
+      {
+        targets: ["." + id + "." + styles["Ekqbym8"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["f3f3a324-60ca-4a72-bc4a-dc43bbc5e5b3",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["f3f3a324-60ca-4a72-bc4a-dc43bbc5e5b3",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.25,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.8,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["E66j00h"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["481d5a41-e01a-41a3-ae4a-61928c8574d8",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["481d5a41-e01a-41a3-ae4a-61928c8574d8",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.32,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.8700000000000001,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eq8j6g7"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["1cb31767-014c-419e-947f-79a1e5231c5a",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["1cb31767-014c-419e-947f-79a1e5231c5a",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.39,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.94,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.39,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.94,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.39,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.94,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.39,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 0.94,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eo237rw"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["a4f7a98b-f947-4b27-9a52-d76c457ab7ad",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["a4f7a98b-f947-4b27-9a52-d76c457ab7ad",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.4600000000000001,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.0100000000000002,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.4600000000000001,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.0100000000000002,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.4600000000000001,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.0100000000000002,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Ewjb0gk"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["8e690ea1-1620-4b7b-9192-46a6c3e1d8b0",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["8e690ea1-1620-4b7b-9192-46a6c3e1d8b0",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.53,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.08,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.6,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.53,
+                          value: 0.6,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.08,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.6,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.53,
+                          value: 0.6,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.08,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Enassju"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["24250224-0838-48ff-b932-41502d98e0fe",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["24250224-0838-48ff-b932-41502d98e0fe",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.6,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.15,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.6,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.15,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.6,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.15,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eg401fy"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["6802201e-1f18-4a1a-97c3-b3f5ee55ca2f",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["6802201e-1f18-4a1a-97c3-b3f5ee55ca2f",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.67,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.22,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.67,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.22,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.67,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.22,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Enz6fnz"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["ca6fc4d0-e46d-447d-96ef-30a099da5b7b",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["ca6fc4d0-e46d-447d-96ef-30a099da5b7b",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.74,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.29,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.74,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.29,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.74,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.29,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eavegyw"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["0829c78d-7906-46f6-8744-474da06926bf",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["0829c78d-7906-46f6-8744-474da06926bf",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.81,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.36,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.81,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.36,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.81,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.36,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eyl92s6"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["365cc688-eccb-4a04-83d5-d00a36761418",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["365cc688-eccb-4a04-83d5-d00a36761418",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.88,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.43,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.88,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.43,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.88,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.43,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eyy3nx7"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["612e474d-ab43-460d-b266-05d4adb0b577",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["612e474d-ab43-460d-b266-05d4adb0b577",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.95,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.5,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.95,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.5,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.95,
+                          value: 0,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                        {
+                          time: 1.5,
+                          value: 1,
+                          ease: "cubicBezier(0.34,1.56,0.64,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Enetn98"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["5b1abf11-003c-4cb5-a041-87c8e1795f74",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["5b1abf11-003c-4cb5-a041-87c8e1795f74",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.02,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.57,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.02,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.57,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.02,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.57,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.02,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.57,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eltew4z"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["d4626b53-cac7-4d77-96d9-a69a631330de",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["d4626b53-cac7-4d77-96d9-a69a631330de",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.09,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.64,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.09,
+                          value: {
+                            value: 16,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.64,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.09,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.64,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.96,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.09,
+                          value: 0.96,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.64,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Etzpxgk"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["c6906c19-0045-49e3-8a09-82eea12fb0db",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["c6906c19-0045-49e3-8a09-82eea12fb0db",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.16,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.71,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.16,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.71,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.9,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.16,
+                          value: 0.9,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.71,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0.9,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.16,
+                          value: 0.9,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.71,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["En1c6y5"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["5f9f642e-e5d1-422b-80ae-8fb5ba6c3c5f",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["5f9f642e-e5d1-422b-80ae-8fb5ba6c3c5f",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.23,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.78,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.23,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.78,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+      {
+        targets: ["." + id + "." + styles["Eeffu1u"] + ""],
+        params: {
+          easing: "linear",
+          __elementPose: {
+            nodeId: '["672efb4f-0314-496b-bdd8-dbf8276add53",[],null,null]',
+            document: {
+              version: 1,
+              timelineId: "03c0ffd0-bb94-11f1-b782-3951872fda8e",
+              duration: 1.9,
+              nodes: [
+                {
+                  id: '["672efb4f-0314-496b-bdd8-dbf8276add53",[],null,null]',
+                  properties: {
+                    opacity: {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: 1,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: 0,
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.3,
+                          value: 0,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.85,
+                          value: 1,
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.x": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [],
+                    },
+                    "transform.y": {
+                      kind: "length",
+                      defaultValue: {
+                        value: 0,
+                        unit: "px",
+                      },
+                      keyframes: [
+                        {
+                          time: 0,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 0.15,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.33,1,0.68,1)",
+                        },
+                        {
+                          time: 1.3,
+                          value: {
+                            value: 12,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                        {
+                          time: 1.85,
+                          value: {
+                            value: 0,
+                            unit: "px",
+                          },
+                          ease: "cubicBezier(0.16,1,0.3,1)",
+                        },
+                      ],
+                    },
+                    "transform.rotateZ": {
+                      kind: "number",
+                      defaultValue: 0,
+                      keyframes: [],
+                    },
+                    "transform.scaleX": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [],
+                    },
+                    "transform.scaleY": {
+                      kind: "number",
+                      defaultValue: 1,
+                      keyframes: [],
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+    ],
+    node: {
+      name: "hoverReveal",
+      seconds: 1.9,
+      loop: false,
+      config: {
+        type_: 3,
+      },
+      screen: 1,
+      segments: [
+        {
+          id: "o1q1bo",
+          start: 0.05,
+          end: 0.08,
+        },
+      ],
+    },
+  },
+});
+
 export const Component = ({
   className = "",
   style,
   divProps,
+  onStatesChange,
 }: {
   className?: string;
   style?: React.CSSProperties;
   divProps?: msi.DivProps;
+  onStatesChange?: (states: States) => void;
 }) => {
   const id = msi.utils.getCount();
   const rootElement = react.useRef<HTMLDivElement>(null);
+  const {
+    state: states,
+    getState,
+    setState: setStateFn,
+  } = msi.storage.useStates<States>({ phase: "idle" });
+  const setState = (states: States) => {
+    if (setStateFn(states)) onStatesChange?.(states);
+  };
+  const { timelines } = msi.timeline.useTimeline(
+    timelineData(id),
+    states?.phase === "in"
+      ? { hoverReveal: msi.timeline.TimelineCommandOption.RE_PLAY }
+      : states?.phase === "running"
+        ? { hoverReveal: msi.timeline.TimelineCommandOption.PLAY }
+        : true
+          ? { hoverReveal: msi.timeline.TimelineCommandOption.INIT }
+          : undefined,
+    styles,
+    rootElement.current,
+    {
+      hoverReveal: {
+        o1q1bo: () => {
+          const states = getState();
+          states.phase = "running";
+          setState(states);
+        },
+      },
+    },
+  );
   return (
     <div
       {...divProps}
@@ -24,6 +1968,13 @@ export const Component = ({
       ref={(element) => {
         (rootElement as any).current = element;
         divProps?.ref?.(element);
+      }}
+      onMouseEnter={(originalEvent) => {
+        const event = msi.utils.prepareMouseEvent(originalEvent);
+        const states = getState();
+        states.phase = "in";
+        setState(states);
+        divProps?.onMouseEnter?.(originalEvent);
       }}
     >
       <div className={` ${id} ${styles["Eckhugh"]}`}>
