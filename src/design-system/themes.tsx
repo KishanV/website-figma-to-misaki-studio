@@ -3,77 +3,132 @@ import styled from "styled-components";
 const cndUrl = (process.env.CDN_URL as string) || "";
 export const ThemeRoot = styled.div`
   display: contents;
-  @font-face {
-    font-family: font-06837810-bacc-11f1-a453-2b32363983db;
-    src: url("assets/fonts/4d11dbe8-1928-4ff2-97a7-5a94930aec07.woff2")
-      format("woff2");
-    font-weight: 400;
-    font-style: normal;
+  --colors-primitive-black: #000000ff;
+  --radius-demo: 12px;
+  --spacing-untitled: 10px;
+  --svgs-types-featuresIocns-components: url("${cndUrl}/assets/images/c482ea5a-5153-4511-aac7-8846986b97c2.svg");
+  --svgs-types-featuresIocns-cms: url("${cndUrl}/assets/images/4d860c7f-0f03-486c-b0cb-3aaded406fa6.svg");
+  --svgs-types-icons-go: url("${cndUrl}/assets/images/d645b362-fe3f-4f7d-8cbd-61e77b682e69.svg");
+  --svgs-types-screenshot-logicTab: url("${cndUrl}/assets/images/0e6b8fba-d46e-4404-ac61-fb58830a7603.png");
+  --svgs-types-social-github: url("${cndUrl}/assets/images/e37103e2-b299-4cb0-b30e-d34b73504daa.svg");
+  --svgs-types-logo-profile: url("${cndUrl}/assets/images/174ba925-56e6-4393-bfdb-ee34269b9529.jpg");
+  --svgs-types-info-clone: url("${cndUrl}/assets/images/a06361fb-67ef-47e1-9fd4-df04d8222a6e.svg");
+  --svgs-types-logo-bg: url("${cndUrl}/assets/images/8a732534-18bd-4b7c-8fe8-3db3943c18fc.png");
+  --svgs-types-logo-main: url("${cndUrl}/assets/images/dc2bebb2-f5ca-42cc-addd-3767e1ef30ec.svg");
+  --svgs-types-info-login: url("${cndUrl}/assets/images/cd88d5cc-c072-4909-bcaf-32f6456c46b3.svg");
+  --svgs-types-screenshot-themes: url("${cndUrl}/assets/images/e9e44de0-37f8-4f8f-8eae-ab997c7e290b.png");
+  --svgs-types-info-play: url("${cndUrl}/assets/images/b4099cb8-0ebe-4c94-8bb4-da405072338c.svg");
+  --svgs-types-social-x: url("${cndUrl}/assets/images/01479509-a701-4f08-94a4-3cd4a04c14d5.svg");
+  --svgs-types-info-menu: url("${cndUrl}/assets/images/6649e1ed-0152-4b6d-bbb0-a6444a4a64b2.svg");
+  --svgs-types-info-github: url("${cndUrl}/assets/images/68fd896f-a690-46c0-aa8d-5ba8d2eda1c5.svg");
+  --svgs-types-screenshot-component: url("${cndUrl}/assets/images/cc7679c7-46d6-4979-a4e1-d52d530b5823.png");
+  --svgs-types-social-discord: url("${cndUrl}/assets/images/50af7d25-451f-441b-8eb3-a998bb6f82d4.svg");
+  --svgs-types-screenshot-exportCode: url("${cndUrl}/assets/images/c9a8d490-a793-4d69-b0f2-1bfd01497e4c.png");
+  --svgs-types-social-linkedin: url("${cndUrl}/assets/images/97a8e07a-51d6-453a-9a5c-da6610c3b365.svg");
+  --svgs-types-screenshot-animationTab: url("${cndUrl}/assets/images/b8887f5f-a1f1-42b2-9dc6-6df843392067.png");
+  --svgs-types-screenshot-designSystem: url("${cndUrl}/assets/images/c5bd6597-b770-4830-81a4-a027c7929c37.png");
+  --svgs-types-assets-curlyArrow: url("${cndUrl}/assets/images/f0eebb27-3ae8-440d-8c08-ac18d94b12e9.svg");
+  --svgs-types-icons-home: url("${cndUrl}/assets/images/3fc9be23-0ccc-4ee7-8404-e11e95db6f94.svg");
+  --svgs-types-icons-mark: url("${cndUrl}/assets/images/83225edc-b84a-41c6-8ec6-3a478ca75aba.svg");
+  --svgs-types-icons-menuDrawer: url("${cndUrl}/assets/images/02453013-aa25-4b29-b73e-a47089a4f167.svg");
+  --svgs-types-screenshot-logicStart: url("${cndUrl}/assets/images/d464dfbf-7e6d-4053-b5f8-067e40b935c4.png");
+  --svgs-types-screenshot-colors: url("${cndUrl}/assets/images/8784686a-e4e5-4b22-84ba-21da76cba3be.png");
+  --svgs-types-screenshot-logicStates: url("${cndUrl}/assets/images/3a7a9b82-8d79-43f2-943c-e4ccdbdf4062.png");
+  --svgs-types-featuresIocns-canvas: url("${cndUrl}/assets/images/3915e800-0959-47d1-96fb-4bc319f395aa.svg");
+  --svgs-types-info-info: url("${cndUrl}/assets/images/b761afc8-0a4e-4ba0-bb68-5b15c7142ab9.svg");
+  --svgs-types-featuresIocns-designSystem: url("${cndUrl}/assets/images/e7396d57-1c72-4445-a0b7-4681f30fc797.svg");
+  --svgs-types-featuresIocns-webPages: url("${cndUrl}/assets/images/00218eb2-d0f9-4193-8e1c-cd76bad9ed01.svg");
+  --svgs-types-social-google: url("${cndUrl}/assets/images/2b478886-a92a-4f3b-81c6-3d6319bb39ba.svg");
+  --svgs-types-screenshot-logic: url("${cndUrl}/assets/images/95f0b52e-57ac-4754-b1e4-4dddee8f72fa.png");
+  --svgs-types-screenshot-designTab: url("${cndUrl}/assets/images/99f98df0-dce3-43d0-ab7a-8764824d17b1.png");
+  &.light_1 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  @font-face {
-    font-family: font-06837810-bacc-11f1-a453-2b32363983db;
-    src: url("assets/fonts/6813758f-074f-4af1-9b50-7a0e675596ab.woff2")
-      format("woff2");
-    font-weight: 500;
-    font-style: normal;
+  &.light_2 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  @font-face {
-    font-family: font-06837810-bacc-11f1-a453-2b32363983db;
-    src: url("assets/fonts/e5c3e351-4325-42fc-a0ea-e0be6162e9f7.woff2")
-      format("woff2");
-    font-weight: 600;
-    font-style: normal;
+  &.light_3 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  @font-face {
-    font-family: font-06837810-bacc-11f1-a453-2b32363983db;
-    src: url("assets/fonts/c0186162-83bf-4952-86a0-923a3bbc98dc.woff2")
-      format("woff2");
-    font-weight: 700;
-    font-style: normal;
+  &.light_4 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  --colors-primitive-landing-blue: #0147ffff;
-  --colors-primitive-landing-grey: #dedee0ff;
-  --colors-primitive-landing-dark: #1c1a1aff;
-  --colors-primitive-landing-white: #ffffffff;
-  --svgs-types-landing-avatar_natali: url("${cndUrl}/assets/images/e16a1203-583f-491b-8756-b4f277b15869.png");
-  --svgs-types-landing-avatar_aliah: url("${cndUrl}/assets/images/9851f06d-a56a-4529-9b2d-a69e277a8414.png");
-  --svgs-types-landing-avatar_loki: url("${cndUrl}/assets/images/a3dbc53a-1e2d-4952-9ad7-070d4a08e5d5.png");
-  --svgs-types-landing-avatar_alisa: url("${cndUrl}/assets/images/4348a0a7-7ede-40bf-8030-db0fb6621311.png");
-  --svgs-types-landing-avatar_orlando: url("${cndUrl}/assets/images/d13bb17b-fae6-4414-bf7b-3a7e1199c83b.jpg");
-  --svgs-types-landing-speaker_photo_1: url("${cndUrl}/assets/images/c07c2c4c-f689-4dad-af4b-47b4dc4a7822.jpg");
-  --svgs-types-landing-speaker_photo_3: url("${cndUrl}/assets/images/1428fbab-53cd-4719-b2d6-74ca9780aacd.jpg");
-  --svgs-types-landing-speaker_photo_4: url("${cndUrl}/assets/images/a33db578-138c-4c08-b38d-5e908e65fa7d.jpg");
-  --svgs-types-landing-speaker_photo_2: url("${cndUrl}/assets/images/4941ee97-362b-484d-a07d-ce8f9aa6d81a.jpg");
-  --svgs-types-landing-venue_map: url("${cndUrl}/assets/images/efdaf7a3-baa6-45df-9623-8051fa77c0ce.jpg");
-  --svgs-types-landing-arrow_white: url("${cndUrl}/assets/images/a403eb9a-8d79-48ca-b701-b5d122f6a44a.svg");
-  --svgs-types-landing-arrow_dark: url("${cndUrl}/assets/images/17df895a-0d21-43cb-8168-5cb3d5f42b01.svg");
-  --svgs-types-landing-arrow_white_ticket: url("${cndUrl}/assets/images/4664d978-c2df-446e-9d69-0fe5ba6644c1.svg");
-  --svgs-types-landing-nav_arrow_right: url("${cndUrl}/assets/images/b595415c-eda5-4019-b9df-aaa80bea062c.svg");
-  --svgs-types-landing-nav_arrow_left: url("${cndUrl}/assets/images/b630b284-23ae-47f0-970e-2a43570f56c9.svg");
-  --svgs-types-landing-agenda_frame: url("${cndUrl}/assets/images/5e71ebb0-4860-4c50-8491-13129b8d7eb3.svg");
-  --svgs-types-landing-countdown_frame: url("${cndUrl}/assets/images/9a266a4a-8a41-4859-97be-d1394d87aeca.svg");
-  --svgs-types-landing-hero_b1: url("${cndUrl}/assets/images/666108e3-1ebb-49cb-a7d2-fa9d67b1a3d7.svg");
-  --svgs-types-landing-speakers_group: url("${cndUrl}/assets/images/07b19893-f91d-41ed-84d0-26ea9e98f5a0.svg");
-  --svgs-types-landing-logo_1: url("${cndUrl}/assets/images/f9b9ec04-30b0-4588-9198-3c5917ce2af9.svg");
-  --svgs-types-landing-logo_2: url("${cndUrl}/assets/images/7aba3a60-5271-4a6b-8ee7-2d1669d5caf5.svg");
-  --svgs-types-landing-logo_3: url("${cndUrl}/assets/images/081d2013-8507-411e-9b3b-4ba2fd3d7c36.svg");
-  --svgs-types-landing-logo_4: url("${cndUrl}/assets/images/85138ca9-8dd6-4e45-8e5b-9be6e3b5891a.svg");
-  --svgs-types-landing-logo_5: url("${cndUrl}/assets/images/0a23a686-670e-4906-a8ef-46d63f027d7f.svg");
-  --svgs-types-landing-social_icons_contact: url("${cndUrl}/assets/images/2614e661-e021-4a8b-b14e-7e4de79d733d.svg");
-  --svgs-types-landing-social_icons_footer: url("${cndUrl}/assets/images/e3e5c6dd-638f-4872-9a84-ad811b79d664.svg");
-  --svgs-types-landing-line_413: url("${cndUrl}/assets/images/5a3029fd-9fd3-4128-8d19-0792439fcecf.svg");
-  --svgs-types-landing-line_462: url("${cndUrl}/assets/images/819a02d4-5571-4d4b-8d4f-6dbca814dba7.svg");
-  --svgs-types-landing-map_pin: url("${cndUrl}/assets/images/eeb2449b-afe2-4233-8e6a-014f218c0593.svg");
-  &.default_1 {
+  &.dark_1 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  &.default_2 {
+  &.dark_2 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  &.default_3 {
+  &.dark_3 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
-  &.default_4 {
+  &.dark_4 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.materialDesign_1 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.materialDesign_2 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.materialDesign_3 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.materialDesign_4 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.untitled_1 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.untitled_2 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.untitled_3 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.untitled_4 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.contrastLight_1 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.contrastLight_2 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.contrastLight_3 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
+  }
+  &.contrastLight_4 {
+    --colors-sematic-untitled: #000000ff;
+    --colors-alias-untitled: #000000ff;
   }
 `;
-export const Themes = { default: "default" };
+export const Themes = {
+  light: "light",
+  dark: "dark",
+  materialDesign: "materialDesign",
+  untitled: "untitled",
+  contrastLight: "contrastLight",
+};
 export type ThemeType = keyof typeof Themes;
 export type Layer = 1 | 2 | 3 | 4;
 
@@ -84,7 +139,7 @@ export const ComponentFileContext = createContext<{
   setLayer: (layer: Layer) => void;
 }>({
   layer: 1,
-  type: "default",
+  type: "light",
   setTheme: () => {},
   setLayer: () => {},
 });
